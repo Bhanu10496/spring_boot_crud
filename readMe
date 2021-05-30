@@ -1,0 +1,29 @@
+Steps:
+Create maven proejct
+Add parent spring project in pom.xml
+Add dependencies in pom.xml (spring web, spring data)
+Make psvm class, controllers, services, entities
+Make TopicRepository interface & add derby embedded db dependency
+mvn clean install   //stores jar in /target
+java -jar ./target/projectName.jar        //to start the spring project
+
+
+//tells what version of jars to download
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.3.RELEASE</version>
+</parent>
+
+<dependencies>
+	//tells what jars to download
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>2.0.3.RELEASE</version>
+    </dependency>
+</dependencies>
+
+
+Adding @RestController (spring mvc annotation) means that inside this class we can have methods that map to http requests,
+conversion of java object to JSON is also taken care of by spring mvc (getter, setter should be present)
