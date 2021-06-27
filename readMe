@@ -4,7 +4,7 @@ Add parent spring project in pom.xml
 Add dependencies in pom.xml (spring web, spring data)
 Make psvm class, controllers, services, entities
 Make TopicRepository interface & add derby embedded db dependency
-mvn clean install   //stores jar in /target
+mvn clean install   //stores jar(containing dependencies as well) in /target
 java -jar ./target/projectName.jar        //to start the spring project
 
 

@@ -3,6 +3,8 @@ package mypackage.a.b.topic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+//Getter setter for keys are required for orm conversions
+
 @Entity
 public class Topic {
 	
